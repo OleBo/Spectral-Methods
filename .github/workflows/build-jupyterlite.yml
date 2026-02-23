@@ -38,12 +38,12 @@ jobs:
 
       - name: Build JupyterLite site
         run: |
-          jupyter lite build --contents code --output-dir dist
+          jupyter lite build --contents code --output-dir jupyterlite
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: .
 
   deploy:
     environment:
