@@ -34,7 +34,7 @@ jobs:
 
       - name: Install JupyterLite and dependencies
         run: |
-          pip install jupyterlite jupyterlab numpy scipy sympy matplotlib
+          pip install jupyterlite jupyterlab jupyterlite-pyodide-kernel numpy scipy sympy matplotlib
 
       - name: Build JupyterLite site
         run: |
